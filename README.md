@@ -27,4 +27,5 @@ require('mdcss')({
 [npm-img]: https://img.shields.io/npm/v/mdcss-theme-aviatur.svg
 [mdcss]:   https://github.com/jonathantneal/mdcss
 
+[mdcss Github]: https://github.com/jonathantneal/mdcss-theme-github
 [mdcss Aviatur]: https://github.com/decksterr/mdcss-theme-aviatur
