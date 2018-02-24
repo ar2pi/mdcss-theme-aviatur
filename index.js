@@ -8,19 +8,19 @@ module.exports = function (themeopts) {
 	themeopts = Object(themeopts);
 
 	// set theme logo
-	themeopts.logo = themeopts.logo || 'mdcss-logo.png';
+	themeopts.logo = themeopts.logo || 'aviatur-logo.svg';
 
 	// set theme title
 	themeopts.title = themeopts.title || 'Style Guide';
 
 	// set theme css
-	themeopts.css = themeopts.css || ['primer.css', 'style.css', 'octicons/octicons.css'];
+	themeopts.css = themeopts.css || ['primer.css', 'style.css', 'main.css', 'octicons/octicons.css'];
 
 	// set theme css
 	themeopts.js = themeopts.js || [];
 
   // set theme masthead color
-	themeopts.color = themeopts.color || ['#4078c0'];
+	themeopts.color = themeopts.color || ['#009bf8'];
 
   // set navigation links
 	themeopts.nav = themeopts.nav || [];
@@ -29,7 +29,7 @@ module.exports = function (themeopts) {
 	themeopts.examples = ext({
 		base:    '',
 		target:  '_self',
-		css:     ['style.css'],
+		css:     ['main.css'],
 		js:      [],
 		bodyjs:  [],
 		htmlcss: 'background:none;border:0;clip:auto;display:block;height:auto;margin:0;padding:0;position:static;width:auto',

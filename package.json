@@ -1,18 +1,17 @@
 {
-  "name": "mdcss-theme-github",
+  "name": "mdcss-theme-aviatur",
   "version": "2.4.2",
-  "description": "GitHub flavored theme for mdcss",
+  "description": "Just another theme for mdcss",
   "keywords": [
     "mdcss",
     "mdcss-theme",
-    "github",
     "theme"
   ],
-  "author": "Jonathan Neal <jonathantneal@hotmail.com> (http://jonathantneal.com)",
+  "author": "Arthur Picerna <arthurpicerna@gmail.com> (http://decksterr.io)",
   "license": "CC0-1.0",
-  "repository": "jonathantneal/mdcss-github-theme",
-  "bugs": "https://github.com/jonathantneal/mdcss-github-theme/issues",
-  "homepage": "https://github.com/jonathantneal/mdcss-github-theme#readme",
+  "repository": "decksterr/mdcss-github-theme",
+  "bugs": "https://github.com/decksterr/mdcss-theme-aviatur/issues",
+  "homepage": "https://github.com/decksterr/mdcss-theme-aviatur#readme",
   "dependencies": {
     "ejs": "^2.4.1",
     "object-assign": "^4.0.1"

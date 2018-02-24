@@ -34,7 +34,9 @@ examples.lang = {
 
 			colorNode.appendChild(document.createTextNode(color.color));
 
-			Object.keys(color).filter(function (key) { return key !== 'color' }).forEach(function (key) {
+			Object.keys(color).filter(function (key) {
+				return key !== 'color'
+			}).forEach(function (key) {
 				var propertyNode = colorNode.appendChild(document.createElement('div'));
 
 				propertyNode.className = 'color-property';
@@ -57,12 +59,14 @@ examples.lang = {
 		}
 
 		function getRGB(color) {
-			return /^#/.test(color) ? hex2rgb(color) : color.replace(/[^\d,]+/g, '').split(/,/).map(function (part) { return part * 1; });
+			return /^#/.test(color) ? hex2rgb(color) : color.replace(/[^\d,]+/g, '').split(/,/).map(function (part) {
+				return part * 1;
+			});
 		}
 
 		function contrast(color) {
 			var rgb = getRGB(color);
-			var o   = Math.round(((parseInt(rgb[0]) * 299) + (parseInt(rgb[1]) * 587) + (parseInt(rgb[2]) * 114)) / 1000);
+			var o = Math.round(((parseInt(rgb[0]) * 299) + (parseInt(rgb[1]) * 587) + (parseInt(rgb[2]) * 114)) / 1000);
 
 			return o <= 180 ? '#ffffff' : '#000000';
 		}
@@ -70,23 +74,23 @@ examples.lang = {
 	html: function (pre, value, conf) {
 		// get wrap
 		var wrap = pre.parentNode;
-    pre.className = 'highlight';
+		pre.className = 'highlight';
 
-    var preview = wrap.insertBefore(document.createElement('div'), pre);
-    preview.className  = 'docs-example clearfix';
+		var preview = wrap.insertBefore(document.createElement('div'), pre);
+		preview.className = 'docs-example clearfix';
 
-    var resizeDiv = preview.appendChild(document.createElement('div'));
-    resizeDiv.className = 'docs-resize';
+		var resizeDiv = preview.appendChild(document.createElement('div'));
+		resizeDiv.className = 'docs-resize';
 
 		var resizeLeft = resizeDiv.appendChild(document.createElement('span'));
-    resizeLeft.className = 'c-resize--left';
+		resizeLeft.className = 'c-resize--left';
 
-    var iframe = resizeDiv.appendChild(document.createElement('iframe'));
-    iframe.className = 'docs-iframe';
-		var style  = iframe.style;
+		var iframe = resizeDiv.appendChild(document.createElement('iframe'));
+		iframe.className = 'docs-iframe';
+		var style = iframe.style;
 
-    var resizeRight = resizeDiv.appendChild(document.createElement('span'));
-    resizeRight.className = 'c-resize--right';
+		var resizeRight = resizeDiv.appendChild(document.createElement('span'));
+		resizeRight.className = 'c-resize--right';
 
 		// get iframe dom
 		var iwin = iframe.contentWindow;
@@ -120,10 +124,10 @@ examples.lang = {
 		idoc.close();
 
 		// add default block styles to iframe dom
-		iwin.addEventListener('load', function(){
+		iwin.addEventListener('load', function () {
 			idoc.documentElement.setAttribute('style', examples.htmlcss);
 			idoc.body.setAttribute('style', examples.bodycss);
-      iframe.setAttribute('class', 'docs-iframe clearfix');
+			iframe.setAttribute('class', 'docs-iframe clearfix');
 		});
 
 		if (conf.width) style.width = String(conf.width);
@@ -144,8 +148,8 @@ examples.lang = {
 			}
 		}
 
-    iwin.addEventListener('load', function () {
-      resizeIFrame();
-    });
+		iwin.addEventListener('load', function () {
+			resizeIFrame();
+		});
 	}
 };
