@@ -14,7 +14,7 @@ module.exports = function (themeopts) {
 	themeopts.title = themeopts.title || 'Toolkit';
 
 	// set theme css
-	themeopts.css = themeopts.css || ['primer.css', 'style.css', 'main.css', 'octicons/octicons.css'];
+	themeopts.css = themeopts.css || ['primer.css', 'style.css', 'octicons/octicons.css'];
 
 	// set theme css
 	themeopts.js = themeopts.js || [];
@@ -32,8 +32,8 @@ module.exports = function (themeopts) {
 		css:     ['main.css'],
 		js:      [],
 		bodyjs:  [],
-		htmlcss: 'background:none;border:0;clip:auto;display:block;height:auto;margin:0;padding:0;position:static;width:auto',
-		bodycss: 'background:none;border:0;clip:auto;display:block;height:auto;margin:0;padding:16px;position:static;width:auto'
+		htmlcss: 'background:none;border:0;clip:auto;display:block;height:auto;margin:0;padding:0;position:static;width:auto;overflow:auto;',
+		bodycss: 'background:none;border:0;clip:auto;display:block;height:auto;margin:0;padding:9px;position:static;width:auto;overflow:auto;'
 	}, themeopts.examples);
 
 	// return theme

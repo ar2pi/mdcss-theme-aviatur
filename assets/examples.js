@@ -138,13 +138,22 @@ examples.lang = {
 
 		function resizeIFrame() {
 			var currentScrollHeight = documentElement.scrollHeight;
+			var innerChildHeight = documentElement.querySelector('body').firstChild.scrollHeight;
 
 			if (scrollHeight !== currentScrollHeight) {
 				scrollHeight = currentScrollHeight;
 
 				style.height = 0;
 
-				style.height = documentElement.scrollHeight + (iframe.offsetHeight - iwin.innerHeight) + 'px';
+				var tempHeight = documentElement.scrollHeight + (iframe.offsetHeight - iwin.innerHeight);
+
+				style.height = tempHeight + 'px';
+
+				if (documentElement.clientHeight < innerChildHeight) {
+					tempHeight += innerChildHeight;
+				}
+
+				style.height = tempHeight + 'px';
 			}
 		}
 
