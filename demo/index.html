@@ -3,17 +3,17 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>GitHub Theme</title>
+    <title>Aviatur Theme</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="primer.css" rel="stylesheet"><link href="style.css" rel="stylesheet"><link href="octicons/octicons.css" rel="stylesheet">
-    <script>examples={"base":"","target":"_self","css":["style.css"],"js":[],"bodyjs":[],"htmlcss":"background:none;border:0;clip:auto;display:block;height:auto;margin:0;padding:0;position:static;width:auto","bodycss":"background:none;border:0;clip:auto;display:block;height:auto;margin:0;padding:16px;position:static;width:auto"};</script>
+    <link href="primer.css" rel="stylesheet"><link href="style.css" rel="stylesheet"><link href="main.css" rel="stylesheet"><link href="octicons/octicons.css" rel="stylesheet">
+    <script>examples={"base":"","target":"_self","css":["main.css"],"js":[],"bodyjs":[],"htmlcss":"background:none;border:0;clip:auto;display:block;height:auto;margin:0;padding:0;position:static;width:auto","bodycss":"background:none;border:0;clip:auto;display:block;height:auto;margin:0;padding:16px;position:static;width:auto"};</script>
     
   </head>
   <body>
     <header class="masthead" style="background-color: #222222;">
       <div class="container">
         <a href="/" class="masthead-logo">
-          <img src="mdcss-logo.png" alt="GitHub Theme" height="32"> GitHub Theme
+          <img src="aviatur-logo.svg" alt="Aviatur Theme" height="32"> Aviatur Theme
         </a>
         <nav class="masthead-nav">
             
@@ -101,9 +101,15 @@
       
 
       <div class="markdown-body">
-        <p><a href="https://www.npmjs.com/package/mdcss-theme-github"><img src="https://img.shields.io/npm/v/mdcss-theme-github.svg" alt="NPM Version"></a> <a href="https://travis-ci.org/jonathantneal/mdcss-theme-github"><img src="https://img.shields.io/travis/jonathantneal/mdcss-theme-github.svg" alt="Build Status"></a>
-<a href="https://github.com/jonathantneal/mdcss-theme-github">mdcss GitHub</a> is a theme for <a href="https://github.com/jonathantneal/mdcss">mdcss</a> based on the documentation styles seen
-across GitHub.</p>
+        <p>[![NPM Version][npm-img]][npm] [![Build Status][ci-img]][ci]
+[mdcss GitHub] is a theme for [mdcss] based on the documentation styles seen
+across GitHub.
+[ci]:      <a href="https://travis-ci.org/jonathantneal/mdcss-theme-github">https://travis-ci.org/jonathantneal/mdcss-theme-github</a>
+[ci-img]:  <a href="https://img.shields.io/travis/jonathantneal/mdcss-theme-github.svg">https://img.shields.io/travis/jonathantneal/mdcss-theme-github.svg</a>
+[mdcss]:   <a href="https://github.com/jonathantneal/mdcss">https://github.com/jonathantneal/mdcss</a>
+[npm]:     <a href="https://www.npmjs.com/package/mdcss-theme-github">https://www.npmjs.com/package/mdcss-theme-github</a>
+[npm-img]: <a href="https://img.shields.io/npm/v/mdcss-theme-github.svg">https://img.shields.io/npm/v/mdcss-theme-github.svg</a>
+[mdcss GitHub]: <a href="https://github.com/jonathantneal/mdcss-theme-github">https://github.com/jonathantneal/mdcss-theme-github</a></p>
 
         
       </div>
@@ -132,34 +138,34 @@ across GitHub.</p>
       <div class="markdown-body">
         <p>Options control the look and feel of the mdcss GitHub theme as well as any
 iframe examples that may be used.</p>
-<h4 id="-title-"><code>title</code></h4>
+<h4 id="title"><code>title</code></h4>
 <p>Type: <code>String</code><br>Default: <code>&#39;Style Guide&#39;</code>
 The page title to be used by the style guide.</p>
-<h4 id="-logo-"><code>logo</code></h4>
+<h4 id="logo"><code>logo</code></h4>
 <p>Type: <code>String</code><br>Default: <code>&#39;mdcss-logo.png&#39;</code></p>
 <p><img src="https://jonathantneal.github.io/mdcss-theme-github/demo/logo.png" height="32"></p>
 <p>The page logo to be used by the style guide.</p>
-<h4 id="-examples-base-"><code>examples.base</code></h4>
+<h4 id="examples-base"><code>examples.base</code></h4>
 <p>Type:    <code>String</code><br>Default: <code>null</code>
 The base URL to use for all relative URLs contained within an example,
 including CSS and JavaScript references.</p>
-<h4 id="-examples-target-"><code>examples.target</code></h4>
+<h4 id="examples-target"><code>examples.target</code></h4>
 <p>Type:    <code>String</code><br>Default: <code>&#39;_self&#39;</code>
 The frame to open example hyperlinks from within an example.</p>
-<h4 id="-examples-css-"><code>examples.css</code></h4>
+<h4 id="examples-css"><code>examples.css</code></h4>
 <p>Type:    <code>Array</code><br>Default: <code>[&#39;style.css&#39;]</code>
 A list of CSS files to be used by examples.</p>
-<h4 id="-examples-js-"><code>examples.js</code></h4>
+<h4 id="examples-js"><code>examples.js</code></h4>
 <p>Type:    <code>Array</code><br>Default: <code>null</code>
 A list of JavaScript files to be used by examples.</p>
-<h4 id="-examples-bodyjs-"><code>examples.bodyjs</code></h4>
+<h4 id="examples-bodyjs"><code>examples.bodyjs</code></h4>
 <p>Type:    <code>Array</code><br>Default: <code>null</code>
 A list of JavaScript files to be used by examples, inserted after the example.</p>
-<h4 id="-examples-htmlcss-"><code>examples.htmlcss</code></h4>
+<h4 id="examples-htmlcss"><code>examples.htmlcss</code></h4>
 <p>Type:    <code>String</code><br>Default: <code>&#39;background:none;border:0;clip:auto;display:block;height:auto;margin:0;padding:0;position:static;width:auto&#39;</code>
 A string of styles applied to the <code>&lt;html&gt;</code> wrapping the example. These default
 styles are used to create a seamless effect with the styleguide.</p>
-<h4 id="-examples-bodycss-"><code>examples.bodycss</code></h4>
+<h4 id="examples-bodycss"><code>examples.bodycss</code></h4>
 <p>Type:    <code>String</code><br>Default: <code>&#39;background:none;border:0;clip:auto;display:block;height:auto;margin:0;padding:16px;position:static;width:auto&#39;</code>
 A string of styles applied to the <code>&lt;body&gt;</code> wrapping the example. These default
 styles are used to create a seamless effect with the styleguide.</p>
@@ -247,7 +253,7 @@ order: -1
 ---
 </code></pre>
 <p>Attached to a subsection, the order detail will control the position of the subsection inside the section.
-```css
+<code>`</code>css
 /*---
 title:   Last Subsection
 section: Third Section</p>
@@ -396,7 +402,7 @@ perferendis quam! Ullam, debitis ab maiores.</p>
         </main>
       </div>
       <footer class="footer">
-        Last modified Thursday, 23 June 2016 13:21
+        Last modified Friday, 23 February 2018 23:05
       </footer>
     </div>
     <script src="prism.js?871234"></script>

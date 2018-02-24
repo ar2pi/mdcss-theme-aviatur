@@ -11,7 +11,7 @@ module.exports = function (themeopts) {
 	themeopts.logo = themeopts.logo || 'aviatur-logo.svg';
 
 	// set theme title
-	themeopts.title = themeopts.title || 'Style Guide';
+	themeopts.title = themeopts.title || 'Toolkit';
 
 	// set theme css
 	themeopts.css = themeopts.css || ['primer.css', 'style.css', 'main.css', 'octicons/octicons.css'];
